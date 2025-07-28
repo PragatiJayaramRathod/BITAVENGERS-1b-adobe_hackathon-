@@ -197,7 +197,9 @@ A single result.json in /app/output:
   "extracted_sections": 
 
 
-[ {  "document": "doc1.pdf",
+[ {  
+
+      "document": "doc1.pdf",
       
       
       "page_number": 1,
@@ -215,7 +217,9 @@ A single result.json in /app/output:
   
   
   "sub_section_analysis":
-  [ {  "document": "doc1.pdf",
+  [ {  
+  
+      "document": "doc1.pdf",
       
       
       "page_number": 2,
