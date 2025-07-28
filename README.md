@@ -1,4 +1,4 @@
-# BITAVENGERS-1b-adobe_hackathon-
+
 
 **Adobe India Hackathon 2025 - Round 1B Solution**
 
