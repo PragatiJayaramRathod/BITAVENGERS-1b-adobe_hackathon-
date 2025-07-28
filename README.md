@@ -192,15 +192,8 @@ A single result.json in /app/output:
   },
 
   
-  
   "extracted_sections": 
-
-  
-  
-  [
-    
-    
-    {
+[ {
       
       
       "document": "doc1.pdf",
@@ -215,20 +208,14 @@ A single result.json in /app/output:
       "importance_rank": 1
     
     
-    }
-  
-  
-  ],
+    } ],
 
   
   
   
   "sub_section_analysis":
   
-  [
-    
-    
-    {
+  [ {
       
       
       "document": "doc1.pdf",
@@ -243,10 +230,7 @@ A single result.json in /app/output:
       "importance_rank": 1
     
     
-    }
-  
-  
-  ]
+    } ]
 
 
 }
