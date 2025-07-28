@@ -87,10 +87,19 @@ BITAVENGERS-1b-adobe_hackathon-/
 
 
 **Dockerfile:** Defines the AMD64 image, installs dependencies, and sets up execution.
+
+
 **README.md:** This file, documenting the solution and instructions.
+
+
 **approach_explanation.md:** Explains the methodology (300-500 words, included below).
+
+
 **requirements.txt:** Lists PyMuPDF==1.23.6.
+
+
 **process_pdfs_round1b.py:** Main script for Round 1B processing.
+
 
 **Approach Explanation (approach_explanation.md)**
 
@@ -115,12 +124,19 @@ Input Files: Prepare a directory with 3-10 PDFs, a persona.txt (role description
 
 Navigate to the project directory:cd path/to/adobe-hackathon-2025-round1b
 
-Build the Docker image:docker build --platform linux/amd64 -t persona-doc-analyzer:v1 .
+Build the Docker image:
 
 
---platform linux/amd64: Ensures AMD64 compatibility.
--t persona-doc-analyzer:v1: Names the image persona-doc-analyzer with tag v1.
-.: Specifies the current directory with the Dockerfile.
+                docker build --platform linux/amd64 -t persona-doc-analyzer:v1 .
+
+
+                --platform linux/amd64: Ensures AMD64 compatibility.
+
+                
+                -t persona-doc-analyzer:v1: Names the image persona-doc-analyzer with tag v1.
+                
+                
+                .: Specifies the current directory with the Dockerfile.
 
 
 
