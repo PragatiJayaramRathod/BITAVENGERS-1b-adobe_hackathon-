@@ -86,6 +86,8 @@ BITAVENGERS-1b-adobe_hackathon-/
 ├── process_pdfs_round1b.py
 
 
+
+
 **Dockerfile:** Defines the AMD64 image, installs dependencies, and sets up execution.
 
 
@@ -193,10 +195,9 @@ A single result.json in /app/output:
 
   
   "extracted_sections": 
-[ {
-      
-      
-      "document": "doc1.pdf",
+
+
+[ {  "document": "doc1.pdf",
       
       
       "page_number": 1,
@@ -214,11 +215,7 @@ A single result.json in /app/output:
   
   
   "sub_section_analysis":
-  
-  [ {
-      
-      
-      "document": "doc1.pdf",
+  [ {  "document": "doc1.pdf",
       
       
       "page_number": 2,
