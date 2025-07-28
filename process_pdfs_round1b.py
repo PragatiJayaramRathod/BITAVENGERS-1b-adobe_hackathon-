@@ -39,7 +39,7 @@ def is_heading(span, prev_size, prev_flags):
     text = span["text"].strip()
     if len(text) > 100 or not text:
         return None
-    if size > 10 and (flags & 16):  # Bold flag
+    if size > 10 and (flags & 16):  
         if size >= prev_size * 1.2:
             return "H1" if size > 14 else "H2"
         elif size >= prev_size * 0.8:
@@ -49,7 +49,7 @@ def is_heading(span, prev_size, prev_flags):
 def calculate_relevance(text, persona, job):
     keywords = job.lower().split() + persona.lower().split()
     count = sum(1 for keyword in keywords if keyword in text.lower())
-    return max(1, 6 - min(count, 5))  # 1 (high) to 5 (low) rank
+    return max(1, 6 - min(count, 5))  
 
 def extract_subsections(doc, sections):
     sub_sections = []
@@ -59,7 +59,7 @@ def extract_subsections(doc, sections):
         for block in blocks:
             if "lines" in block:
                 text = " ".join(line["spans"][0]["text"] for line in block["lines"] if line["spans"])
-                if len(text.strip()) < 100:  # Heuristic for sub-section
+                if len(text.strip()) < 100:  
                     relevance = calculate_relevance(text, "", section["section_title"])
                     sub_sections.append({
                         "document": doc.name,
@@ -86,8 +86,8 @@ def process_documents(input_dir, output_dir):
         with fitz.open(doc_path) as doc:
             sections = extract_sections(doc, persona, job)
             sub_sections = extract_subsections(doc, sections)
-            output["extracted_sections"].extend(sections[:5])  # Top 5 sections
-            output["sub_section_analysis"].extend(sub_sections[:5])  # Top 5 sub-sections
+            output["extracted_sections"].extend(sections[:5]) 
+            output["sub_section_analysis"].extend(sub_sections[:5])  
     
     output_path = Path(output_dir) / "result.json"
     with open(output_path, "w", encoding="utf-8") as f:
