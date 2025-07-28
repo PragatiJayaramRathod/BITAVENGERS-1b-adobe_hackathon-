@@ -169,6 +169,8 @@ Run the container:
 
 A single result.json in /app/output:
 
+
+
 {
   
   
@@ -188,9 +190,12 @@ A single result.json in /app/output:
   
   
   },
+
   
   
   "extracted_sections": 
+
+  
   
   [
     
@@ -214,9 +219,13 @@ A single result.json in /app/output:
   
   
   ],
+
   
   
-  "sub_section_analysis": [
+  
+  "sub_section_analysis":
+  
+  [
     
     
     {
@@ -241,6 +250,8 @@ A single result.json in /app/output:
 
 
 }
+
+
 
 **Testing**
 
